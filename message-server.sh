@@ -16,7 +16,8 @@ def main():
     sys.stdout = os.fdopen(sys.stdout.fileno(), 'wb', 0)
     sys.stderr = os.fdopen(sys.stderr.fileno(), 'wb', 0)
 
-    DROPLET_DIR = os.path.dirname(os.path.dirname(sys.argv[0]))
+    #DROPLET_DIR = os.path.dirname(os.path.dirname(sys.argv[0]))
+    DROPLET_DIR = os.path.dirname("/Users/michielsens/Documents/Xebia/Educatie/localCDPipeline/git_cloudfoundry/testfile_not_in_git")
     MESSAGE_FILE=os.path.join(DROPLET_DIR, 'message.msg')
 
     # Read the message
